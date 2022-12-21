@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm install --only=dev && tsc && vite build",
+    "build": "tsc && vite build",
+    "build:prod": "npm install --only=dev && npm run build && npm prune --production",
     "preview": "vite preview"
   },
   "dependencies": {
