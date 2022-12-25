@@ -11,8 +11,8 @@ export class NoticiaRepository {
     private _noticiaProvider: NoticiaProvider,
     private _noticiaMapping: NoticiaMapping
   ) {}
-  getAll = (): Promise<Noticia[]> => {
-    const source$ = from(this._noticiaProvider.getAll()).pipe(
+  getAll = (params: string): Promise<Noticia[]> => {
+    const source$ = from(this._noticiaProvider.getAll(params)).pipe(
       map((response: HttpResponse) => response.body as any),
       map((body) => body.data as any[]),
       map(this._noticiaMapping.toList)

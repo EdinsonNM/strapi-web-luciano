@@ -7,7 +7,10 @@ import {
 
 export class NoticiaProviderService implements NoticiaProvider {
   constructor(private client: HttpClient) {}
-  getAll = (): Promise<HttpResponse<any>> => {
-    return this.client.request({ method: HttpMethod.GET, url: "noticias" });
+  getAll = (params: string = ""): Promise<HttpResponse<any>> => {
+    return this.client.request({
+      method: HttpMethod.GET,
+      url: `noticias?populate=*&${params}`,
+    });
   };
 }

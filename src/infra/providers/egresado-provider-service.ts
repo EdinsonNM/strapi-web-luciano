@@ -7,7 +7,10 @@ import {
 
 export class EgresadoProviderService implements EgresadoProvider {
   constructor(private client: HttpClient) {}
-  getAll = (): Promise<HttpResponse<any>> => {
-    return this.client.request({ method: HttpMethod.GET, url: "egresados" });
+  getAll = (params: string = ""): Promise<HttpResponse<any>> => {
+    return this.client.request({
+      method: HttpMethod.GET,
+      url: `egresados?populate=*&${params}`,
+    });
   };
 }

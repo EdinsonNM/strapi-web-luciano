@@ -1,26 +1,15 @@
 import { useMemo, useRef, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import React from "react";
-import { Banner } from "./components/banner/banner";
-
+import { Banner } from "../landing/components/banner/banner";
+import { Menu } from "../landing/components/menu/menu";
+import { Footer } from "../landing/components/footer/footer";
 export const About = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full">      
       <header className="flex flex-row justify-between w-full max-w-7xl m-auto h-[100px] items-center">
         <h1>IST. LUCIANO CASTILLO</h1>
-        <nav>
-          <ul className="flex flex-row gap-5">
-            <li className="bg-[#F4EBFF] rounded-md">
-              <a href="#">Nosotros</a>
-            </li>
-            <li>
-              <a href="#">Programas de estudios</a>
-            </li>
-            <li>
-              <a href="#">Escuelas</a>
-            </li>
-          </ul>
-        </nav>
+        <Menu />
       </header>
       <main className="w-full max-w-7xl m-auto mt-24">
         <Banner />
@@ -76,6 +65,8 @@ export const About = () => {
           estudios en Tecnología Pesquera.
         </section>
       </main>
+      <Footer />
     </div>
+    
   );
 };

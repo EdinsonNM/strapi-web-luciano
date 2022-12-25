@@ -14,8 +14,8 @@ export class EgresadoRepository {
     private _egresadoProvider: EgresadoProvider,
     private _egresadoMapping: EgresadoMapping
   ) {}
-  getAll = (): Promise<Egresado[]> => {
-    const source$ = from(this._egresadoProvider.getAll()).pipe(
+  getAll = (params: string): Promise<Egresado[]> => {
+    const source$ = from(this._egresadoProvider.getAll(params)).pipe(
       map((response: HttpResponse) => response.body as any),
       map((body) => body.data as any[]),
       map(this._egresadoMapping.toList)
