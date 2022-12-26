@@ -17,13 +17,16 @@ export const Banner = () => {
           </button>
         </div>
         <div className="flex flex-row mt-8 gap-6">
+        <a href={"https://lucianocastillo.biblioteca.net.pe/admin/users/login"} target="_blank">
           <div
             className="flex flex-row items-center justify-center gap-2 hover:text-[#7F56D9]"
             role="button"
           >
             <BiLibrary />
-            Biblioteca Virtual
+            Biblioteca Virtual            
           </div>
+          </a>
+          <a href={"https://istplucianocastillo.edu.pe/aulaVirtual"} target="_blank">
           <div
             className="flex flex-row items-center justify-center gap-2 hover:text-[#7F56D9]"
             role="button"
@@ -31,6 +34,7 @@ export const Banner = () => {
             <SiGoogleclassroom />
             Aula Virtual
           </div>
+          </a>
         </div>
       </div>
       <div className="relative">

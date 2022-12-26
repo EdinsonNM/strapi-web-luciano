@@ -27,9 +27,6 @@ export const Menu = () => {
         <li>
           <a href="#">Programas de estudios</a>
         </li>
-        <li>
-          <a href="#">Escuelas</a>
-        </li>
       </ul>
     </nav>
   );

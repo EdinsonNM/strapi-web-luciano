@@ -16,14 +16,14 @@ import Arrow from "/public/arrow.svg";
 import Card from "../Card/Card";
 import useWindowSize from "../hooks/windowSize";
 
-const CarouselSlider = ({ setSlideCount, setCurrentSlide,data }) => {
+const CarouselSlider = ({ setSlideCount, setCurrentSlide,data }: any) => {  
   const screenWidth = useWindowSize();
 
   //pure-react-carousel context
   const carouselContext = useContext(CarouselContext);
 
   useEffect(() => {
-    const updateCarouselSlide = (slideToBeVisible) => {
+    const updateCarouselSlide = (slideToBeVisible : any) => {
       const {
         currentSlide,
         totalSlides,
@@ -55,7 +55,7 @@ const CarouselSlider = ({ setSlideCount, setCurrentSlide,data }) => {
   return (
     <Wrapper>
       <Slider>
-      {data.map((item, index) => (
+      {data.map((item : any, index : any) => (
         <Slide key={`program` + item.id} index={index} className="slide">
           <div
                   role="button"
