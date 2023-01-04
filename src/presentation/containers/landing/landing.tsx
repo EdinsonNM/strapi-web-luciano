@@ -25,10 +25,13 @@ export const Landing = () => {
   return (
     <div className="flex flex-col w-full">
       <header className="flex flex-row justify-between w-full max-w-7xl m-auto h-[100px] items-center">
-        <h1>IST. LUCIANO CASTILLO</h1>
+      <div className="flex flex-row mt-3">
+        <img src="../public/escudo.png" ></img>
+        <h1 className="text-2xl mx-4 text-sky-500 font-bold"> ISTP. LUCIANO CASTILLO</h1>
+      </div>
         <Menu />
       </header>
-      <main className="w-full max-w-7xl m-auto mt-24">
+      <main className="w-full max-w-7xl m-auto mt-3">
         <Banner />
         <Programs data={programs} />
         <Publications data={publicaciones} />

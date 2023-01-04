@@ -13,9 +13,10 @@ export const About = () => {
       </header>
       <main className="w-full max-w-7xl m-auto mt-24">
         <Banner />
-        <section className="mb-10">
-          <h3 className="text-5xl mb-6">Misión</h3>
-          <p className="text-sm my-3 leading-6">
+        <hr className="mt-5"></hr>
+        <section className="mb-10 mt-5">
+          <h3 className="text-5xl mb-6 text-indigo-800">Misión</h3>
+          <p className="text-base my-3 leading-6 text-slate-700 text-justify">
             Somos una persona jurídica, que goza de autonomía académica,
             económica y administrativa ; genera y difunde conocimiento
             científico-tecnológico a la población estudiantil, brinda formación
@@ -23,9 +24,10 @@ export const About = () => {
             sostenible de la región y del país.
           </p>
         </section>
-        <section className="mb-10">
-          <h3 className="text-5xl mb-6">Visión</h3>
-          <p className="text-sm my-3 leading-6">
+ 
+        <section className="mb-10 mt-5">
+          <h3 className="text-5xl mb-6 text-indigo-800">Visión</h3>
+          <p className="text-base my-3 leading-6 text-slate-700">
             Somos una persona jurídica, que goza de autonomía académica,
             económica y administrativa ; genera y difunde conocimiento
             científico-tecnológico a la población estudiantil, brinda formación
@@ -33,9 +35,10 @@ export const About = () => {
             sostenible de la región y del país.
           </p>
         </section>
-        <section>
-          <h3 className="text-5xl mb-6">Nuestra historia</h3>
-          El Instituto de Educación Superior Tecnológico Público “LUCIANO
+
+        <section className="mt-5">
+          <h3 className="text-5xl mb-6 text-indigo-800">Nuestra historia</h3>
+          <p className="text-base my-3 leading-6 text-slate-700 text-justify">El Instituto de Educación Superior Tecnológico Público “LUCIANO
           CASTILLO COLONNA” fue creado mediante Resolución Ministerial Nº
           290-87-ED del 23 de junio de 1987 y revalidado con R.D. N°
           282-2005-ED. Inicialmente se autoriza el funcionamiento de tres
@@ -62,8 +65,9 @@ export const About = () => {
           a partir del año 2000 desarrolle los estudios en Mecánica Automotriz.
           El 10 de diciembre de 2007, por Resolución Jefatural Nº 0375-2007-ED
           se autoriza al Instituto para que a partir del año 2008 desarrolle los
-          estudios en Tecnología Pesquera.
+          estudios en Tecnología Pesquera.</p>
         </section>
+        <hr className="mt-5"></hr>
       </main>
       <Footer />
     </div>
